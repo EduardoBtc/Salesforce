@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Data_de_Admiss_o__c</fullName>
+        <externalId>false</externalId>
+        <label>Data de Admissão</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Dia_admiss_o__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(DAY(Data_de_Admiss_o__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dia admissão</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dia_anivers_rio__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(DAY(Birthdate))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dia aniversário</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M_s_admiss_o__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH(Data_de_Admiss_o__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mês admissão</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M_s_anivers_rio__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH(Birthdate))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mês aniversário</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
